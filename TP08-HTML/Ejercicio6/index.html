@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Inscripción - Club Deportivo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    header {
+      background-color: #eb1f1f;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    form {
+      width: 80%;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    fieldset {
+      border: 1px solid #30363d;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    legend {
+      color: #58a6ff;
+      padding: 0 10px;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0d1117;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #58a6ff;
+      box-shadow: 0 0 5px #58a6ff;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .checkbox-group label {
+      width: auto;
+      background-color: #0d1117;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .checkbox-group label:hover {
+      background-color: #1f6feb;
+      color: white;
+    }
+    button {
+      display: block;
+      width: 100%;
+      background-color: #1f6feb;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #388bfd;
+    }
+  </style>
+</head>
+<body>
+  <header> Ficha de Inscripción - Club Atletico San Lorenzo de Almagro</header>
+
+  <form>
+    <!-- Datos Personales -->
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <label>Nombre y Apellido:</label>
+      <input type="text" name="nombre" required>
+
+      <label>DNI:</label>
+      <input type="text" name="dni" required>
+
+      <label>Fecha de Nacimiento:</label>
+      <input type="date" name="nacimiento" required>
+
+      <label>Teléfono de Contacto:</label>
+      <input type="tel" name="telefono" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Domicilio:</label>
+      <input type="text" name="domicilio">
+    </fieldset>
+
+    <!-- Información de Salud -->
+    <fieldset>
+      <legend>Información de Salud</legend>
+      <label>¿Posee alguna enfermedad o condición médica?</label>
+      <textarea name="condiciones" rows="3" placeholder="Ejemplo: asma, alergias, lesiones, etc."></textarea>
+
+      <label>¿Está actualmente bajo tratamiento médico?</label>
+      <select name="tratamiento">
+        <option value="">Seleccione</option>
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Contacto de emergencia:</label>
+      <input type="text" name="emergencia" placeholder="Nombre y teléfono">
+    </fieldset>
+
+    <!-- Antecedentes Deportivos -->
+    <fieldset>
+      <legend>Antecedentes Deportivos</legend>
+      <label>¿Ha practicado algún deporte previamente?</label>
+      <textarea name="antecedentes" rows="3" placeholder="Mencione deportes o clubes anteriores"></textarea>
+
+      <label>Nivel de experiencia:</label>
+      <select name="nivel">
+        <option value="">Seleccione</option>
+        <option value="principiante">Principiante</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+      </select>
+    </fieldset>
+
+    <!-- Motivación / Deportes elegidos -->
+    <fieldset>
+      <legend>Motivación e Intereses</legend>
+      <label>¿Qué servicios o deportes le interesan?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="deporte" value="futbol"> Fútbol</label>
+        <label><input type="checkbox" name="deporte" value="natacion"> Natación</label>
+        <label><input type="checkbox" name="deporte" value="gimnasio"> Gimnasio</label>
+        <label><input type="checkbox" name="deporte" value="tenis"> Tenis</label>
+        <label><input type="checkbox" name="deporte" value="handball"> Handball</label>
+        <label><input type="checkbox" name="deporte" value="basket"> Básquet</label>
+      </div>
+
+      <label>Motivo principal de inscripción:</label>
+      <textarea name="motivo" rows="3" placeholder="Ejemplo: mejorar condición física, competir, recreación, etc."></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar Inscripción</button>
+  </form>
+</body>
+</html>
