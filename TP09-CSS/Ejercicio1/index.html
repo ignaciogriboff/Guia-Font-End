@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha del Actor - Sylvester Stallone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1f6feb, #388bfd);
+      text-align: center;
+      padding: 30px 0;
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    main {
+      width: 85%;
+      margin: 40px auto;
+      background-color: #161b22;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .perfil {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #0d1117;
+    }
+
+    .perfil img {
+      width: 320px;
+      border-radius: 0;
+      height: auto;
+    }
+
+    .info {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .info h2 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      margin: 5px 0;
+    }
+
+    section {
+      padding: 25px;
+    }
+
+    section h2 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 5px;
+    }
+
+    .peliculas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .pelicula {
+      background-color: #0d1117;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(255,255,255,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .pelicula:hover {
+      transform: translateY(-5px);
+    }
+
+    .pelicula img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .pelicula h3 {
+      margin: 10px;
+      color: #58a6ff;
+    }
+
+    .pelicula p {
+      margin: 0 10px 15px;
+      font-size: 0.9rem;
+      color: #c9d1d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1f6feb;
+      color: white;
+      margin-top: 30px;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 700px) {
+      .perfil {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .perfil img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Ficha del Actor: Sylvester Stallone</header>
+
+  <main>
+    <div class="perfil">
+      <img src="F:\UBP\2025\Semestre 2\Laboratorio II\Guia-Font-End\TP09-CSS\Ejercicio1\stallone-foto.jpg" alt="Sylvester Stallone">
+      <div class="info">
+        <h2>Datos Personales</h2>
+        <p><strong>Nombre completo:</strong> Michael Sylvester Gardenzio Stallone</p>
+        <p><strong>Fecha de nacimiento:</strong> 6 de julio de 1946</p>
+        <p><strong>Lugar de nacimiento:</strong> Nueva York, EE. UU.</p>
+        <p><strong>Nacionalidad:</strong> Estadounidense</p>
+        <p><strong>Profesión:</strong> Actor, director, guionista y productor de cine</p>
+        <p><strong>Género destacado:</strong> Acción, drama y deporte</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Películas destacadas</h2>
+      <div class="peliculas">
+        <div class="pelicula">
+          <img src="F:\UBP\2025\Semestre 2\Laboratorio II\Guia-Font-End\TP09-CSS\Ejercicio1\rocky.jpg" alt="Rocky (1976)">
+          <h3>Rocky (1976)</h3>
+          <p>El papel que lo lanzó a la fama mundial. Stallone interpretó a Rocky Balboa, un boxeador amateur que lucha por alcanzar la gloria.</p>
+        </div>
+        <div class="pelicula">
+          <img src="F:\UBP\2025\Semestre 2\Laboratorio II\Guia-Font-End\TP09-CSS\Ejercicio1\rambo.jpg" alt="Rambo: First Blood">
+          <h3>Rambo: First Blood (1982)</h3>
+          <p>Interpretó a John Rambo, un veterano de guerra incomprendido, en una de las sagas de acción más emblemáticas del cine.</p>
+        </div>
+        <div class="pelicula">
+          <img src="F:\UBP\2025\Semestre 2\Laboratorio II\Guia-Font-End\TP09-CSS\Ejercicio1\expendables.jpg" alt="The Expendables">
+          <h3>The Expendables (2010)</h3>
+          <p>Dirigió y protagonizó esta película que reunió a los grandes íconos del cine de acción de los 80s y 90s.</p>
+        </div>
+        <div class="pelicula">
+          <img src="F:\UBP\2025\Semestre 2\Laboratorio II\Guia-Font-End\TP09-CSS\Ejercicio1\creed.jpg" alt="Creed">
+          <h3>Creed (2015)</h3>
+          <p>Volvió al papel de Rocky, ahora como mentor del hijo de Apollo Creed. Ganó un Globo de Oro por su interpretación.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Ficha de Sylvester Stallone</footer>
+
+</body>
+</html>
